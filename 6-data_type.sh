@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Number1=100
+Number1=soumith
 Number2=200
 
 SUM=$(($Number1+$Number2))
