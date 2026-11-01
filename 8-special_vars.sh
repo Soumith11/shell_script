@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "All Variables present in the script:$@"
+echo "All Variables present in the script: $@ "
