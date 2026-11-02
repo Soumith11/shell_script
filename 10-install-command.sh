@@ -17,4 +17,5 @@ then
     echo "Installing MYSQL is Success"
 else
     echo "Installing MySQL is Failed"
+    exit 1 #Exit code 1 will reflecting when the installation is failed
     fi
