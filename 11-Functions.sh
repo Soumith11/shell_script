@@ -10,6 +10,7 @@ else
 echo "You are running script with root access"
 fi
 
+#Creating Function with the name of VALIDATE where we are making repeated code at one place and calling whenever required
 VALIDATE(){
     if [ $1 -eq 0 ]
     then
@@ -28,7 +29,7 @@ then
 
     dnf install mysql -y
 
-    VALIDATE $? "MYSQL"
+    VALIDATE $? "MYSQL" #Calling the VALIDATE function by passing arguments $?- exit code and MYSQL is the package need to be installed
 
 else 
     echo "MySQL is already installed... Nothing to do"
@@ -42,8 +43,8 @@ then
 
     dnf install nginx -y
     
-    VALIDATE $? "Nginx"
-    
+    VALIDATE $? "Nginx" #Calling the VALIDATE function by passing arguments $? and Nginix package which need to be installed
+
 else
     echo "Nginx is already installed... Nothing to do"
 fi
@@ -56,7 +57,7 @@ then
 
     dnf install python3 -y
 
-    VALIDATE $? "Python3"
+    VALIDATE $? "Python3" #Calling the VALIDATE function by passing arguments $? and Python3 package which need to be installed
 
 else
     echo "Python3 is already installed... Nothing to do"
