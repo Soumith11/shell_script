@@ -12,7 +12,7 @@ then
 echo -e " $R Error $N: Please run the script with root access"
 exit 1
 else
-echo " $G You are running script with root access $N "
+echo -e " $G You are running script with root access $N "
 fi
 
 #Creating Function with the name of VALIDATE where we are making repeated code at one place and calling whenever required
